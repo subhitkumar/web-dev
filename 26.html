@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after pseudo</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<!-- <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet"> -->
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            
+        }
+        header::before{
+            content: "";
+            background: url('https://source.unsplash.com/1600x900/?nature,water');
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+        section{
+            height: 344px;
+            margin: 3px 23px;
+            display: flex;
+            flex-direction: column;
+            /* border: 2px solid red; */
+            text-align: center;
+            justify-content: center;
+            
+        }
+        .navigation{
+            display: flex;
+            font-size: 20px;
+            font-family: 'Baloo 2', cursive;
+        }
+        li{
+            list-style: none;
+            padding: 23px 34px;
+        }
+        h3{
+            font-size: 4rem;
+        }
+        p{
+            text-align: center;
+        }
+        li:hover{
+           background-color: black;
+        }
+    </style>
+</head>
+<body>  
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">ABOUT</li>
+                <li class="item">SERVICES</li>
+                <li class="item">Contact us</li>
+            </ul>
+        </nav>
+    </header> 
+        <section>
+            <h3>
+                Welcome To Coding World</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At officia numquam animi odio necessitatibus distinctio deleniti iste natus recusandae aliquid laudantium rerum tempora, est sapiente explicabo ullam aliquam pariatur deserunt veritatis amet? Mollitia, sequi!</p>
+            </section>
+            <hr>
+
+</body>
+</html>

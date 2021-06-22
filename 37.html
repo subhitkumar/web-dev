@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID MEDIA QUERIES</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer';
+
+        }
+
+        nav {
+            grid-area: navbar;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+            text-align: center;
+        }
+
+        .bdr {
+            border: 2px solid black;
+            padding: 23px;
+            background-color: wheat;
+        }
+
+        @media only screen and (max-width:300px) {
+            body {
+                background-color: cyan;
+            }
+            
+        }
+
+        @media (min-width: 300px) and (max-width:500px) {
+            body {
+
+                background-color: blueviolet;
+            }
+            .container{
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section section'
+        
+            'footer footer footer footer';
+            }
+            aside{
+                display: none;
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media (min-width: 500px) and (max-width:800px) {
+            body {
+
+                background-color: yellow;
+
+            }
+            .container{
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer';
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media only screen and (min-width:800px) {
+            body {
+                background-color: violet;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <div class="container">
+        <nav class="bdr">
+           <span>home</span>
+           <span>about</span>
+           <span>conatct</span>
+        </nav>
+        <section class="bdr">
+            <h2>LEARN CSS IN HINDI</h2>
+        </section>
+        <aside class="bdr">
+            <h1>MORE ABOUT US</h1>
+        </aside>
+    </div>
+
+    <footer class="bdr"> copyright!!!</footer>
+</body>
+
+</html>

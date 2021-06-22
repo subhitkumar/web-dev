@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attribute and psedo</title>
+    <style>
+        .container{
+           display: block;
+           width: 244px;
+           margin: auto;
+        }
+        input{
+        
+            display: block;
+        }
+        input[type="text"]{
+            padding: 23px 32px;
+            border: 2px solid red;
+            font-size: 20px;
+        }
+        a[target]
+        {
+          font-size: 55px;
+          color: violet;  
+        }
+        /* li:nth-child(2n+0){
+            color: cyan;
+        } */
+        li:nth-child(odd)
+        {
+            color: blue;
+        }
+        li:nth-child(even)
+        {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <H1>
+            <a href="http://google.com" target="_blank">go to google</a>
+        </H1>
+        <form action="" class="formcontrol">
+            <input type="text" placeholder="enter your naem">
+            <input type="password" placeholder="enter your password">
+            <input type="submit" value="submit">
+        </form>
+        <ul>
+            <li class="item" id="item1">item1</li>
+            <li class="item" id="item2">item2</li>
+            <li class="item" id="item3">item3</li>
+            <li class="item" id="item4">item4</li>
+        </ul>
+    </div>
+</body>
+</html>

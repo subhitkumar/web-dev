@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>allignment</title>   
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            width: 900px;
+            border: 2px solid green;
+            margin: auto;
+            background-color: sandybrown;
+
+        }
+        .item{
+            border: 2px solid grey;
+            margin: 12px 3px;
+            padding: 12px,3px;
+            background-color: rgb(98,78,87);
+        }
+        #fruits{
+            float: left;
+            width: 48%;
+        }
+        #computers{
+            float: right;
+            /* clear: right; */
+            width: 48%;
+        }
+        #stationary{
+            /* float: left; */
+            clear: both;
+            width: 100%;
+        }
+        p,h3{
+            text-align: justify;
+        }
+        h1{
+            margin: auto;
+            width: 450px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1> WELCOME TO MY STORE</h1>
+        <div id="fruits" class="item">
+            <h3>FRUITS</h3>
+            <p id="fruits" class="para">
+    
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quos exercitationem laudantium quidem perspiciatis deserunt esse, odio eos sint repellat doloremque, aut cum fugit dolorem? Quis illo saepe labore libero.
+            </p>
+        </div>
+        <div id="computers" class="item">
+            <h3>computers</h3>
+            <p id="computers" class="para">
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quos exercitationem laudantium quidem perspiciatis deserunt esse, odio eos sint repellat doloremque, aut cum fugit dolorem? Quis illo saepe labore libero Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio illum autem quod maxime voluptatem accusamus? Quas numquam repellat nisi tempore minus id, deleniti, est fugiat, similique nulla obcaecati natus beatae!.
+            </p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>stationary</h3>
+            <p id="stationary" class="para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quos exercitationem laudantium quidem perspiciatis deserunt esse, odio eos sint repellat doloremque, aut cum fugit dolorem? Quis illo saepe labore libero Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quis ex voluptatum officia quibusdam. Repudiandae voluptas maiores fuga. Incidunt ipsa ea repellendus! Exercitationem, cupiditate laudantium ipsum ullam necessitatibus sed quae!.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
